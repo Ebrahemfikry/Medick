@@ -1,0 +1,468 @@
+main{
+    overflow: hidden;
+}
+header{
+    background: url(../images/banner1.jpg) no-repeat center/cover fixed;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+}
+header::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(18, 29, 78, 0.938);
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+}
+header nav{
+    padding: 0 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav  h1{
+    color: #fff;
+}
+header nav  span{
+    color: rgb(18, 172, 219);
+}
+#mood{
+    display: none;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+header nav ul li{
+    margin: 0 20px;
+}
+header nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+header nav form{
+    margin-left: 200px;
+}
+header nav form input{
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    padding: 4px;
+}
+header nav i{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 1s;
+}
+header .info{
+    position: relative;
+    text-align: center;
+    transform: translateY(60%);
+}
+header .info span{
+    color: rgb(137, 218, 255);
+    display: block;
+    font-size: 18px;
+}
+header .info h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+header .info a{
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+@media only screen and (max-width: 600px) {
+    header nav{
+        padding: 20px;
+    }
+    header nav ul,
+    header nav form,
+    header nav .moon{
+        display: none;
+    }
+    header .info{
+        transform: translateY(-50%);
+    }
+    .dul{
+        background-color: rgb(58, 44, 44);
+        z-index: 222;
+    }
+    .dul ul li{
+        margin-top: 20px;
+    }
+    #mood{
+        display: none;
+    }
+    #moodLight{
+        display: none;
+    }
+}
+@media only screen and (min-width: 600px) {
+    header nav{
+        padding: 20px;
+    }
+    header nav ul,
+    header nav form,
+    header nav .moon{
+        display: none;
+    }
+    header .info{
+        transform: translateY(-50%);
+    }
+    #mood{
+        display: none;
+    }
+    #moodLight{
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px) {
+    header nav{
+        padding: 20px;
+    }
+    header nav ul,
+    header nav form,
+    header nav .moon{
+        display: none;
+    }
+    header .info{
+        transform: translateY(-50%);
+    }
+    #mood{
+        display: none;; 
+    }
+    #moodLight{
+        display: none;
+    }
+    
+}
+@media only screen and (max-width: 992px){
+    .dul{
+        background-color: rgb(58, 44, 44);
+        z-index: 222;
+    }
+    .dul ul li{
+        margin-top: 20px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    header .info{
+        transform: translateY(30%);
+    }
+    #mood{
+        display: none;  
+    }
+    #moodLight{
+        display: none; 
+    }
+}
+@media only screen and (min-width: 1200px) {
+    header nav ul,
+    header nav form,
+    header nav .moon{
+        display: flex;
+    }
+    header .info{
+        transform: translateY(-80%);
+    }
+    #mood{
+        display: block;
+    }
+    #moodLight{
+        display: none;
+    }
+}
+@media only screen and (min-width: 1920px){
+    header .section{
+        margin: -50px 0;
+    }
+}
+/* end header ###################################### */
+.img {
+    margin-top: 30px;
+}
+.img img{
+    width: 100%;
+}
+/* end img ################################################# */
+.about{
+    min-height: 400px;
+    margin-top: 120px;
+    padding: 30px;
+}
+@media only screen and (max-width: 600px) {
+    .about{
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .about .box{
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 600px){
+    .about{
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .about .box{
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 768px){
+    .about{
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .about .box{
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 992px){
+    .about{
+        flex-direction: row;
+        margin-top: 100px;
+        width: 100%;
+    }
+}
+/* end about ######################################## */
+.servece{
+    margin-top: 20px;
+    padding: 30px;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgb(248, 248, 248);
+}
+.servece span{
+    color: rgb(47, 137, 240)
+}
+.servece h1{
+    margin-bottom: 40px;
+}
+.servece .contain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.servece .box{
+    text-align: center;
+    width: 350px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.servece  i{
+    color: rgb(10, 158, 226);
+    margin: 0 5px;
+    font-size: 50px;
+}
+.servece h2{
+    margin-top: 10px;
+    font-size: 25px;
+    color: rgb(73, 73, 73);
+}
+.servece p{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #777;
+}
+
+@media only screen and (max-width: 600px) {
+    .servece .box{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (min-width: 600px){
+    .servece .box{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (min-width: 768px){
+    .servece{
+        margin-bottom: 30px;
+    }
+    .servece .box{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+/* end servece ############################################ */
+.section1{
+    background-color: rgb(240, 240, 240);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section1 .content .box ul{
+    list-style: none;
+}
+.section1 .content .box ul li{
+    padding-left: 20px;
+    color: #777;
+    font-size: 20px;
+}
+.section1 .content .box ul li::marker{
+    content: '\2714';
+    color: rgb(0, 162, 255);
+}
+/* end section1 ######################################## */
+
+.section1 img{
+    border-radius: 20px;
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    .section1{
+        flex-direction: column;
+    }
+    .section1 .box{
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (min-width: 600px){
+    .section1{
+        flex-direction: column;
+    }
+    .section1 .box{
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (min-width: 768px){
+    .section1{
+        flex-direction: column;
+    }
+    .section1 .box{
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (min-width: 992px){
+    .section1{
+        flex-direction: row;
+        width: 100%;
+    }
+}
+/* end section ########################## */
+
+
+footer{
+    padding: 30px;
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .box{
+    width: 300px;
+    height: 250px;
+}
+footer .box h1{
+    font-size: 30px;
+    color: #fff;
+    margin-top: 20px;
+}
+footer .box p{
+    font-size: 18px;
+    color: rgb(158, 158, 158);
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all .5s;
+}
+footer .box p:hover{  
+    color: rgb(58, 166, 255);
+}
+footer .box form input{  
+    display: block;
+    width: 250px;
+    border-radius: 20px;
+    border-radius: 20px;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+footer .box form a{  
+    display: block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    background-color: rgb(39, 174, 252);
+    width: 250px;
+    border-radius: 20px;
+    border: 0;
+    outline: none;
+}
+@media only screen and (max-width: 600px) {
+    footer{
+        flex-direction: column;
+        padding-bottom: 70px;
+    }
+    footer .box{
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+    footer .box form input, 
+    footer .box form a{  
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 600px){
+    footer{
+        flex-direction: column;
+    }
+    footer .box{
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+    footer .box form input, 
+    footer .box form a{  
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 768px){
+    footer{
+        flex-flow: row wrap;
+    }
+    footer .box{
+        width: 300px;
+        margin-bottom: 30px;
+        height: 300px;
+    }
+}
+@media only screen and (min-width: 992px){
+    footer{
+        flex-direction: row;
+    }
+    footer .box{
+        width: 250px;
+
+    }
+}
+.end{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(22, 22, 22);
+    color: #fff;
+    font-size: 20px;
+}
